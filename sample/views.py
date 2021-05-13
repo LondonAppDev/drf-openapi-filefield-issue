@@ -18,4 +18,3 @@ class ProfileSerializer(serializers.ModelSerializer):
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
     queryset = models.Profile.objects.all()
-    parser_classes = [parsers.FileUploadParser, parsers.MultiPartParser]
